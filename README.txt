@@ -1,4 +1,8 @@
 Love2d Version: 11.4
+For Windows 7, 8, 10, 11
+Usage:
+enter com: "com2" "com3" or "3"
+
 Why is this Threaded? Because io.read("*line") is blocking and does not have a timeout so if the arduino does not send data then Love2d Locks
 Why is Send Threaded? Because io becomes locked to the thread and you can not switch io from thread to the main 
 
