@@ -14,6 +14,10 @@ end
 function love.update(dt)
     if state == 'startup' then
         if state == 'startup' and text ~= '' then
+            if tonumber(text) then
+                -- if text is a number, prepend "COM"
+                text = "COM" .. text
+            end
             print('test '..text)
             windowsCom = text
         end
